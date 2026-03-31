@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>WebGPU Screensaver Cube</title>
+	<style>
+		html, body {
+			margin: 0;
+			height: 100%;
+			overflow: hidden;
+			background: radial-gradient(circle at 20% 20%, #1a2e48, #060913 65%);
+		}
+		canvas {
+			width: 100vw;
+			height: 100vh;
+			display: block;
+			outline: none;
+		}
+		#status {
+			position: fixed;
+			inset: 0;
+			display: none;
+			align-items: center;
+			justify-content: center;
+			padding: 24px;
+			color: #d7e6ff;
+			font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+			text-align: center;
+			background: #070b14;
+		}
+	</style>
+</head>
+<body>
+	<canvas aria-label="WebGPU animated cube"></canvas>
+	<div id="status" role="status" aria-live="polite"></div>
+	<script type="module" src="main.js"></script>
+</body>
+</html>
